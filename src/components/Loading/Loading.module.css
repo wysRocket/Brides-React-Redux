@@ -1,0 +1,32 @@
+.myModal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.modal_dialog{
+	margin: 40px auto;
+}
+.modal_my_content {
+	text-align: center;
+	width: 230px;
+	padding: 11px 12px;
+	position: relative;
+	background: linear-gradient(to top, #dfeff3, #ffffff);
+}
+.load_img {
+	position: absolute;
+	top: -40px;
+	left: 75px;
+	animation: heart-puls;
+	animation-duration: .4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes heart-puls {
+	0%{
+		transform: Scale(1.1);
+	}
+	100%{
+		transform: Scale(1.2,1.2);
+	}
+}

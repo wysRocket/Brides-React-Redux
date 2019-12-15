@@ -1,0 +1,11 @@
+.type_mssg_area {
+    width: 98%;
+}
+.formControl.error textarea {
+    border: solid red 2px;
+}
+.formControl.error i {
+    color: red;
+    font-size: 10px;
+    
+}

@@ -1,0 +1,11 @@
+.info_profile {
+    background-color: #F6F9FA;
+    font-family: "OpenSansRegular", "HelveticaRegular", "PT Sans", sans-serif;
+    border: 2px dashed #16b4dc;
+    padding: 30px;
+    width: 85%;
+    text-align: center;
+}
+.panel span {
+    text-transform: uppercase;
+}

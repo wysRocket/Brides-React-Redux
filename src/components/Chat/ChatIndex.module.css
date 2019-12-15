@@ -1,0 +1,92 @@
+
+.dialogs {
+    display: grid;
+    grid-template-columns: 1fr 3fr 6fr 3fr 1fr;
+    grid-column-gap: 15px;
+}
+.l_sidebar {
+    grid-column: 2/3;
+}
+.dialog {
+    grid-column: 3/4;
+}
+.r_sidebar {
+    grid-column: 4/5;
+}
+.form_input{
+    min-height: 25px;
+    width: 70%;
+    margin-left: 30px;
+}
+
+ul.girls_list {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.girl_item {
+    padding: 10px;
+    background-color: rgb(240, 240, 240) ;
+    margin: 5px;
+    display: flex;
+}
+.ava {
+    background: url("../img/girl-list-mini.jpg") no-repeat;
+    background-position: -38px -33px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+h3.item_girl_name{
+    margin-left: 10px;
+}
+
+span.item_girl_from {
+    font-size: 12px;
+    display: block;
+}
+
+.girl_item:hover{
+    background-color: rgb(144, 226, 247);
+    text-decoration: none;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(144, 226, 247);
+}
+.message_ava {
+    background: url("../img/chat-girl-foto.jpg");
+    background-position: -15px -10px;
+    border-radius: 30%;
+    width: 45px;
+    height: 45px;
+    margin: 7px;
+}
+.title_chat_time {
+    float: right;
+}
+.chat_item_title {
+    font-size: 14px;
+}
+.sendMessage_field {
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.my_message {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(240, 240, 240);
+}
+.my_message_ava {
+    background: url("../img/man1.jpg");
+    background-position: center center;
+    border-radius: 30%;
+    width: 45px;
+    height: 45px;
+    margin: 7px;
+}
+.view_profile_ac {
+    text-decoration: underline;
+}

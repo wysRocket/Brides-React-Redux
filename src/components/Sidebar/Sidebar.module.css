@@ -1,0 +1,54 @@
+.main_menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 15px;
+}
+.menu_drop {
+  max-width: 300px;
+}
+.menu_drop li {
+  margin-bottom: 5px;
+  padding: 0 20px;
+  list-style-type: none;
+  min-height: 25px;
+  font-size: 20px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+.menu_drop ul {
+  border: 1px solid #eee;
+  margin-left: 35px;
+}
+.menu_drop li a {
+  font-family: "OpenSansRegular", "HelveticaRegular", "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #16b4dc;
+}
+.menu_drop a:hover {
+  font-family: "OpenSansBold", "HelveticaBold", sans-serif;
+  font-size: 16px;
+}
+.badge {
+  float: right;
+  font-size: 12px;
+}
+.services {
+  background: url("../img/service-ico.png") no-repeat;
+}
+.correspondence {
+  background: url("../img/menu-account.png") no-repeat;
+  background-position: 0px 4px;
+}
+.ladies {
+  background: url("../img/menu-account.png") no-repeat;
+  background-position: 0 -588px;
+}
+.finances {
+  background: url("../img/menu-account.png") no-repeat;
+  background-position: 0px -448px;
+}
+.myprofile {
+  background: url("../img/menu-account.png") no-repeat;
+  background-position: 0px -239px;
+}

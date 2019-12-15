@@ -1,0 +1,22 @@
+.dashpanel {
+  display: flex;
+  background-color: #353535;
+  color: beige;
+  height: 42px;
+  align-items: center;
+  justify-content: space-between;
+}
+.panel_name {
+  padding-left: 40px;
+}
+.profile_nav a{
+  margin-right: 30px;
+  color: beige;
+}
+.action_nav a {
+  color: beige;
+  margin-right: 20px;
+}
+.profile_nav button{
+  margin-right: 30px;
+}

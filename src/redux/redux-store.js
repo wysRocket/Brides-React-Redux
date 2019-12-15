@@ -1,0 +1,22 @@
+import {combineReducers, createStore, applyMiddleware} from "redux";
+import chatsReducer from './chat-reducer';
+import ladCatalogReducer from './ladcatalog-reducer';
+import profileReducer from "./profile-reducer";
+import authReducer from "./auth-reducer";
+import thunkMiddleware from 'redux-thunk';
+import { reducer as formReducer} from 'redux-form';
+import appReducer from "./app-reducer";
+
+let reducers = combineReducers ({
+    chatsPage: chatsReducer,
+    ladCatalogPage: ladCatalogReducer,
+    profilePage: profileReducer,
+    auth: authReducer,
+    form: formReducer,
+    app: appReducer,
+});
+
+let store = createStore(reducers, applyMiddleware(thunkMiddleware));
+
+export default store;
+

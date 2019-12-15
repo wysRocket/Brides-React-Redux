@@ -1,0 +1,126 @@
+import React from 'react';
+import style from './Profile.module.css';
+import profileMainPhoto from './../img/photo3.jpg';
+import LoadingModal from './../Loading/Loading';
+import ProfileStatusWithHooks from './ProfileStatusHook';
+
+const Profile = (props) => {
+   if (!props.profile) {return <LoadingModal/>}
+
+    return (
+    <div className='row'>
+<div className={style.grid_container}>
+    <div className={style.profile_main_photo}>
+        <img src={profileMainPhoto} alt="" />
+    </div>
+    <div className={style.profile_main_info}>
+        <div className={style.profile_name}>
+            <h3> {props.profile.fullName} </h3>
+            <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus} />
+            <span className={style.id_girl}> ID: {props.profile.userId} </span>
+        </div>
+        <div className={style.main_params}>
+            <table className={style.params_table}>
+                <tbody>
+                    <tr>
+                        <td>Birth Date</td>
+                        <td className={style.value}>10.09.1990 </td>
+                    </tr>
+                    <tr>
+                        <td>Height</td>
+                        <td className={style.value}>160 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td className={style.value}>50 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Eyes</td>
+                        <td className={style.value}>Green</td>
+                    </tr>
+                    <tr>
+                        <td>Hair</td>
+                        <td className={style.value}>Black</td>
+                    </tr>
+                    <tr>
+                        <td>Build</td>
+                        <td className={style.value}>Slim</td>
+                    </tr>
+                    <tr>
+                        <td>Glasses</td>
+                        <td className={style.value}>No</td>
+                    </tr>
+                    <tr>
+                        <td>Smoking</td>
+                        <td className={style.value}>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Drinking</td>
+                        <td className={style.value}>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div className={style.profile_add_info}>
+        <div className={style.action_btns}>
+            <a href="#0" className={style.btn_inv}>Invite to Video Chat</a>
+            <a href="#0" className={style.btn_start_chat}> Start a Chat</a>
+            <a href="#0" className={style.btn_write_letter}>Write a Letter</a>
+            <a href="#0" className={style.btn_add_to_fav}> Add to Favorites</a>
+            <a href="#0" className={style.btn_like_her}>Like Her!</a>
+        </div>
+        <div className={style.add_info}>
+            <table className={style.params_table}>
+                <tbody>
+                    <tr>
+                        <td>Religion</td>
+                        <td><a href="#0">Christian</a></td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                        <td><a href="#0">B.A. Student</a></td>
+                    </tr>
+                    <tr>
+                        <td>Field of work</td>
+                        <td><a href="#0">Medical/Health</a></td>
+                    </tr>
+                    <tr>
+                        <td>Occupation</td>
+                        <td><a href="#0">Student</a></td>
+                    </tr>
+                    <tr>
+                        <td> Marital status</td>
+                        <td><a href="#0">Single and No children</a></td>
+                    </tr>
+                    <tr>
+                        <td>Want to have children?</td>
+                        <td><a href="#0">will decide with my husband</a></td>
+                    </tr>
+                    <tr>
+                        <td>My Languages</td>
+                        <td>
+                            <ul>
+                                <li><a href="#0">Russian</a><span>(Fluent)</span></li>
+                                <li><a href="#0">Ukrainian</a><span>(Native)</span></li>
+                                <li><a href="#0">English</a><span>(Beginner)</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <div className={style.btn_wrap}>
+        <a href="#0" className={style.btn_chatstart}>Start a Chat</a>
+        <a href="#0" className={style.btn_invite}>Invite to VIdeo Chat</a>
+        <a href="#0" className={style.btn_present}>Send a Present</a>
+        <a href="#0" className={style.btn_send_letter}>Send a FREE Letter</a>
+    </div>
+</div>
+)
+}
+
+
+export default Profile;

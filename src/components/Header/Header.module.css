@@ -1,0 +1,46 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 5fr 2fr 1fr;
+  grid-template-areas: ". header-logo header-nav header-langdropdown .";
+  grid-column-gap: 20px;
+  min-height: 40px;
+  align-items: center;
+  border-bottom: 4px solid #16b4dc;
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+	color: black;
+}
+.logo {
+  grid-area: header-logo;
+  background: url(./../img/heart.png) no-repeat ;
+}
+.logo a {
+  padding-left: 45px;
+	font-weight: 800;
+	font-size: 36px;
+	font-family: 'OpenSans', sans-serif;
+	
+}
+.decor {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #72cae6;
+	letter-spacing: 1px;
+	position: absolute;
+  padding-top: 0px;
+  margin-left: -40px;
+  
+}
+.header_nav {
+  grid-area: header-nav;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.header_nav a:hover {
+  background-color:#16b4dc;
+  cursor: pointer;
+}

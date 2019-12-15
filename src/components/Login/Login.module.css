@@ -1,0 +1,76 @@
+.login_page {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-column-gap: 15px;
+  font-family: "OpenSansRegular", "HelveticaRegular", "PT Sans", sans-serif;
+}
+.login_column {
+  padding-left: 10px;
+}
+.login_form {
+  background-color: #ebebeb;
+  padding: 35px 10px;
+}
+.btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.login_fb {
+  background-color: #3c5a99;
+  color: white;
+  padding: 10px 5px 5px 5px;
+  margin-bottom: 20px;
+}
+.fa_facebook {
+  background-color: #3c5a99;
+  color: white;
+  font-size: 28px;
+  border-right: 2px solid white;
+  padding-left: 10px;
+  position: relative;
+  bottom: -2px;
+	right: 2px;
+}
+.logform_text {
+  margin: 25px 0px 30px 5px;
+}
+.prcd_btn {
+  margin-right: 15px;
+  background-color: #1f68ba;
+  color: white;
+  padding: 4px 16px;
+  transition: all .2s;
+}
+.prcd_btn:hover, .login_fb:hover {
+  background-color: #4989d5;
+}
+.forgot_btn:hover {
+  text-decoration: underline;
+}
+.checkbox {
+  display: flex;
+}
+.img_block img {
+  height: 230px;
+}
+.online_ind {
+  position: relative;
+  left: -38px;
+  background-color: rgba(66, 133, 17, 1);
+  font-size: 12px;
+  bottom: 4px;
+  color: white;
+}
+.user_name {
+  font-size: 20px;
+  font-family: "HelveticaMedium", sans-serif;
+  
+}
+.girls_block {
+  display: flex;
+  background-color: #f8f8f8;
+}
+.auth_error {
+  color: red;
+}
