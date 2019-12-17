@@ -1,9 +1,10 @@
 import React, {PureComponent} from 'react';
 import {connect} from 'react-redux';
-import LadCatalog from './LadCatalogClass';
+import LadCatalog from './LadCatalog';
 import {follow, unfollow, setCurrentPage, setTotalUsersCount, toggleIsFetching, toggleFollowingProgress, requestUsers } from '../../redux/ladcatalog-reducer';
 import LoadingModal from '../Loading/Loading';
-import {getUsers, getCurrentPage,getPageSize, getIsFetching,getTotalUsersCount, getFollowingInProgress} from './../../redux/users-selectors'
+import {getUsersSelector, getCurrentPage,getPageSize, getIsFetching,getTotalUsersCount, getFollowingInProgress} from './../../redux/users-selectors'
+import { compose } from 'redux';
 
 class LadCatalogContainer extends PureComponent {
     
@@ -14,6 +15,7 @@ onPageChanged = (pageNumber) => {
     this.props.getUsers(pageNumber, this.props.pageSize);
     }
     render () {
+        
         return <>
         { this.props.isFetching ? <LoadingModal/> : null }
         <LadCatalog onPageChanged={this.onPageChanged}
@@ -32,7 +34,7 @@ onPageChanged = (pageNumber) => {
 
 let mapStateToProps = (state) => {
     return {
-        users: state.ladCatalogPage.users,
+        users: getUsersSelector(state),
         pageSize: getPageSize(state),
         totalUsersCount: getTotalUsersCount(state),
         currentPage: getCurrentPage(state),
@@ -41,5 +43,7 @@ let mapStateToProps = (state) => {
     }
 };
 
-export default connect (mapStateToProps, {follow , unfollow, setCurrentPage,
-    toggleIsFetching, toggleFollowingProgress, requestUsers}) (LadCatalogContainer);
+export default compose(
+    connect (mapStateToProps, {follow , unfollow, setCurrentPage,
+    toggleIsFetching, toggleFollowingProgress, requestUsers})) 
+    (LadCatalogContainer);

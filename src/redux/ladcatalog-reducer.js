@@ -31,13 +31,7 @@ const ladCatalogReducer = (state = initialState, action) => {
     
   case FOLLOW:
     return {...state, 
-//      users: updateObjectInArray(state.users, action.userId, "id", {followed: true})
-      users: state.users.map(u => {
-      if (u.id === action.userId) {
-        return {...u, followed: true}
-      }
-      return u;
-    })
+      users: updateObjectInArray(state.users, action.userId, "id", {followed: true})
   }
   case UNFOLLOW:
         return {...state, users: state.users.map(u => {
@@ -75,11 +69,11 @@ export const setTotalUsersCount = (totalUsersCount) => ({type: SET_TOTAL_USERS_C
 export const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
 export const toggleFollowingProgress = (isFetching, userId) => ({type: TOGGLE_FOLLOWING_IN_PROGRESS, isFetching, userId});
 
-export const requestUsers = (currentPage, pageSize) => {
+export const requestUsers = (page, pageSize) => {
   return async (dispatch) => {
     dispatch(toggleIsFetching(true));
-    dispatch(setCurrentPage(currentPage));
-    let data = await usersAPI.getUsers(currentPage, pageSize)
+    dispatch(setCurrentPage(page));
+    let data = await usersAPI.getUsers(page, pageSize)
             dispatch(toggleIsFetching(false));
             dispatch(setUsers(data.items))
           dispatch(setTotalUsersCount(data.totalCount))
