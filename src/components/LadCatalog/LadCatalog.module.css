@@ -21,7 +21,7 @@
 	font-size: 12px;
 	padding: 10px;
     border-radius: 6px;
-    margin-top: 15px;
+    margin: 15px 18px;
 }
 .view_prof_btn:hover {
     text-decoration: underline;
@@ -34,10 +34,4 @@
     position: relative;
     left: -40px;
 	bottom: 10px;  
-}
-
-.selected_page {
-    font-weight: bold;
-    background-color: #1f68ba;
-    padding: 5px;
 }

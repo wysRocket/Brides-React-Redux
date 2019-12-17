@@ -6,13 +6,15 @@ import LoadingModal from '../Loading/Loading';
 import {getUsersSelector, getCurrentPage,getPageSize, getIsFetching,getTotalUsersCount, getFollowingInProgress} from './../../redux/users-selectors'
 import { compose } from 'redux';
 
-class LadCatalogContainer extends PureComponent {
+class LadCatalogContainer extends React.Component {
     
 componentDidMount() {
-    this.props.getUsers(this.props.currentPage, this.props.pageSize);
+    const {currentPage, pageSize} = this.props;
+    this.props.requestUsers(currentPage, pageSize);
     }
 onPageChanged = (pageNumber) => {
-    this.props.getUsers(pageNumber, this.props.pageSize);
+    const {pageSize} = this.props;
+    this.props.requestUsers(pageNumber, pageSize);
     }
     render () {
         
