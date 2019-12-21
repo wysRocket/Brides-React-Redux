@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/myReactApp/static/css/main.2656998b.chunk.css",
-    "main.js": "/myReactApp/static/js/main.7f1a2a23.chunk.js",
-    "main.js.map": "/myReactApp/static/js/main.7f1a2a23.chunk.js.map",
-    "runtime-main.js": "/myReactApp/static/js/runtime-main.5a6f2977.js",
-    "runtime-main.js.map": "/myReactApp/static/js/runtime-main.5a6f2977.js.map",
-    "static/js/2.054849bf.chunk.js": "/myReactApp/static/js/2.054849bf.chunk.js",
-    "static/js/2.054849bf.chunk.js.map": "/myReactApp/static/js/2.054849bf.chunk.js.map",
-    "static/css/3.4d7dbf98.chunk.css": "/myReactApp/static/css/3.4d7dbf98.chunk.css",
-    "static/js/3.07af1231.chunk.js": "/myReactApp/static/js/3.07af1231.chunk.js",
-    "static/js/3.07af1231.chunk.js.map": "/myReactApp/static/js/3.07af1231.chunk.js.map",
+    "main.js": "/myReactApp/static/js/main.41ce0e41.chunk.js",
+    "main.js.map": "/myReactApp/static/js/main.41ce0e41.chunk.js.map",
+    "runtime-main.js": "/myReactApp/static/js/runtime-main.5fe62d9b.js",
+    "runtime-main.js.map": "/myReactApp/static/js/runtime-main.5fe62d9b.js.map",
+    "static/js/2.84a74a99.chunk.js": "/myReactApp/static/js/2.84a74a99.chunk.js",
+    "static/js/2.84a74a99.chunk.js.map": "/myReactApp/static/js/2.84a74a99.chunk.js.map",
+    "static/css/3.60be5d93.chunk.css": "/myReactApp/static/css/3.60be5d93.chunk.css",
+    "static/js/3.a26484e9.chunk.js": "/myReactApp/static/js/3.a26484e9.chunk.js",
+    "static/js/3.a26484e9.chunk.js.map": "/myReactApp/static/js/3.a26484e9.chunk.js.map",
     "static/css/4.8a8b4973.chunk.css": "/myReactApp/static/css/4.8a8b4973.chunk.css",
-    "static/js/4.fe41258b.chunk.js": "/myReactApp/static/js/4.fe41258b.chunk.js",
-    "static/js/4.fe41258b.chunk.js.map": "/myReactApp/static/js/4.fe41258b.chunk.js.map",
+    "static/js/4.e7f54c8a.chunk.js": "/myReactApp/static/js/4.e7f54c8a.chunk.js",
+    "static/js/4.e7f54c8a.chunk.js.map": "/myReactApp/static/js/4.e7f54c8a.chunk.js.map",
     "index.html": "/myReactApp/index.html",
-    "precache-manifest.7228b12de8ed5ace231aff7da049c3ae.js": "/myReactApp/precache-manifest.7228b12de8ed5ace231aff7da049c3ae.js",
+    "precache-manifest.9fa22c965047971b2d47be397c992ef7.js": "/myReactApp/precache-manifest.9fa22c965047971b2d47be397c992ef7.js",
     "service-worker.js": "/myReactApp/service-worker.js",
-    "static/css/3.4d7dbf98.chunk.css.map": "/myReactApp/static/css/3.4d7dbf98.chunk.css.map",
+    "static/css/3.60be5d93.chunk.css.map": "/myReactApp/static/css/3.60be5d93.chunk.css.map",
     "static/css/4.8a8b4973.chunk.css.map": "/myReactApp/static/css/4.8a8b4973.chunk.css.map",
     "static/css/main.2656998b.chunk.css.map": "/myReactApp/static/css/main.2656998b.chunk.css.map",
     "static/media/ChatIndex.module.css": "/myReactApp/static/media/girl-list-mini.f8c3ef2e.jpg",
@@ -28,9 +28,9 @@
     "static/media/photo3.jpg": "/myReactApp/static/media/photo3.510c4275.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5a6f2977.js",
-    "static/js/2.054849bf.chunk.js",
+    "static/js/runtime-main.5fe62d9b.js",
+    "static/js/2.84a74a99.chunk.js",
     "static/css/main.2656998b.chunk.css",
-    "static/js/main.7f1a2a23.chunk.js"
+    "static/js/main.41ce0e41.chunk.js"
   ]
 }
