@@ -5,14 +5,15 @@ import {NavLink} from 'react-router-dom';
 import emptyStar from './../img/star1.png';
 import fullStar from './../img/star2.png';
 
-const User = ({user, followingInProgress, unfollow, follow}) => {
 
+const User = ({user, followingInProgress, unfollow, follow}) => {
+   
 return (
 <div className={style.lad_item}>
     <div className='anketa_block'>
         <div className="link_img">
             <NavLink to={'/profile/'+ user.id}>
-                <img src={defaultImageGirl} alt="" />
+                <img src={user.photos.small !=null ? user.photos.small : defaultImageGirl} alt="" />
             </NavLink>
             {user.followed ?
             <img disabled={followingInProgress.some(id=>id === user.id)}

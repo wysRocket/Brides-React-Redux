@@ -6,12 +6,19 @@ import ProfileStatusWithHooks from './ProfileStatusHook';
 
 const Profile = (props) => {
    if (!props.profile) {return <LoadingModal/>}
-
+    const onMainPhotoSelecetd = (e) => {
+        if (e.target.files.length) {
+            props.savePhoto(e.target.files[0])
+        }
+    }
     return (
     <div className='row'>
 <div className={style.grid_container}>
     <div className={style.profile_main_photo}>
-        <img src={profileMainPhoto} alt="" />
+        <img src={props.profile.photos.large || profileMainPhoto} alt="" />
+        
+        {props.isOwner && <input type={"file"} onChange={onMainPhotoSelecetd}/>}
+
     </div>
     <div className={style.profile_main_info}>
         <div className={style.profile_name}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Sidebar.module.css';
-import {NavLink, Route} from 'react-router-dom';
+import {NavLink, Route, Switch} from 'react-router-dom';
 import ViewProfile from './../ViewProfile/ViewProfile';
 import MyPhotos from './../MyPhotos/MyPhotos';
 
@@ -48,9 +48,11 @@ const Sidebar = () => {
                     <li> <a href='#'> Log Out</a> </li>
                 </ul>
             </div>
-            <div> 
-                <Route path='/main/viewprofile' render={ ()=> <ViewProfile /> } />
+            <div>
+                <Switch> 
                 <Route path='/main/myphotos' render={ ()=> <MyPhotos /> } />
+                <Route path='/main/' render={ ()=> <ViewProfile /> } />
+                </Switch>
             </div>
         </div>
           

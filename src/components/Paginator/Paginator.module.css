@@ -1,11 +1,22 @@
 .lad_pagination {
     display: flex;
     justify-content: center;
-    margin: 10px 0px 10px;
+    margin: 10px 0px 20px;
     cursor: pointer;
+    
 }
-.selected_page {
+.pag_page {
+    padding: 7px;
+	background-color:#f5f5f5;
+	color: #333;
+}
+
+.pag_page.selected_page {
+    background-color: #57B711;
+    color: white;
     font-weight: bold;
-    background-color: #1f68ba;
-    padding: 5px;
+}
+.pag_page :hover {
+    background-color: #e3e3e3;
+    text-decoration: underline;
 }

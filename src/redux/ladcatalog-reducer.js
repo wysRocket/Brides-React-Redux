@@ -12,11 +12,11 @@ const TOGGLE_FOLLOWING_IN_PROGRESS = 'TOGGLE_FOLLOWING_IN_PROGRESS';
 let initialState = {
       
   users : [
-    {id: 1, followed: false, name: 'Daryna', age: '23', city: 'Gomel'},
-    {id: 2, followed: true, name: 'Maryna', age: '24', city: 'Mykolaiv'},
-    {id: 3, followed: true, name: 'Galyna', age: '25', city: 'Kyiv'},
-    {id: 4, followed: true, name: 'Malyna', age: '26', city: 'Mykolaiv'},
-    {id: 5, followed: false, name: 'Kalyna', age: '27', city: 'Lviv'},
+    {id: 1, followed: false, name: 'Daryna', age: '23', city: 'Gomel', photos: {small: 'null'}},
+    {id: 2, followed: true, name: 'Maryna', age: '24', city: 'Mykolaiv', photos: {small: 'null'}},
+    {id: 3, followed: true, name: 'Galyna', age: '25', city: 'Kyiv', photos: {small: 'null'}},
+    {id: 4, followed: true, name: 'Malyna', age: '26', city: 'Mykolaiv', photos: {small: 'null'}},
+    {id: 5, followed: false, name: 'Kalyna', age: '27', city: 'Lviv', photos: {small: 'null'}},
   ],
   pageSize: 6,
   totalUsersCount: 36,
@@ -30,8 +30,8 @@ const ladCatalogReducer = (state = initialState, action) => {
   switch (action.type) {
     
   case FOLLOW:
-    return {...state, 
-      users: updateObjectInArray(state.users, action.userId, "id", {followed: true})
+    return {
+      ...state, users: updateObjectInArray(state.users, action.userId, "id", {followed: true})
   }
   case UNFOLLOW:
         return {...state, users: state.users.map(u => {

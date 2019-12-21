@@ -6,7 +6,7 @@ import LoadingModal from '../Loading/Loading';
 import {getUsersSelector, getCurrentPage,getPageSize, getIsFetching,getTotalUsersCount, getFollowingInProgress} from './../../redux/users-selectors'
 import { compose } from 'redux';
 
-class LadCatalogContainer extends React.Component {
+class LadCatalogContainer extends PureComponent {
     
 componentDidMount() {
     const {currentPage, pageSize} = this.props;
