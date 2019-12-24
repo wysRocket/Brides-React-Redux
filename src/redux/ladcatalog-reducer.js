@@ -31,8 +31,14 @@ const ladCatalogReducer = (state = initialState, action) => {
     
   case FOLLOW:
     return {
-      ...state, users: updateObjectInArray(state.users, action.userId, "id", {followed: true})
-  }
+      ...state, users: state.users.map(u => {
+        if (u.id === action.userId) {
+          return {...u, followed: true}
+        }
+        return u;
+      })}
+//      updateObjectInArray(state.users, action.userId, "id", {followed: true})
+//  }
   case UNFOLLOW:
         return {...state, users: state.users.map(u => {
           if (u.id === action.userId) {

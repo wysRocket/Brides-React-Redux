@@ -14,7 +14,7 @@ const Header = (props) => {
           </NavLink>
         </div>
         <nav className={style.header_nav}>
-          <a href='#'> Ladies Gallerie </a>
+          <NavLink to='/ladiescatalog'> Ladies Gallerie </NavLink>
           <a href='#'> New Profiles</a>
           <a href='#'> Available for VideoChat</a>
           <NavLink to='/ladiescatalog'> My Favorites</NavLink>

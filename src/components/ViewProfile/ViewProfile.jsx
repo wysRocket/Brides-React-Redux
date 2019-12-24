@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './ViewProfile.module.css'
+import { NavLink } from 'react-router-dom';
 
 const ViewProfile = () => {
     return (
@@ -18,8 +19,8 @@ const ViewProfile = () => {
                     </div>
             <p>To attract more ladies attention to your account - it need`s to be complete. 
             You can check how does it look like now.</p>
-            <a href ='#' className="button"><button>Edit My Profile</button></a>
-            <a href ='#' className="button"><button>View My Profile</button></a>
+            <NavLink to ='/profile' className="button"><button>Edit My Profile</button></NavLink>
+            <NavLink to ='/profile' className="button"><button>View My Profile</button></NavLink>
             </div>
         </div>
     );

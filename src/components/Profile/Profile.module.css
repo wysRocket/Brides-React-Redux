@@ -1,6 +1,6 @@
 .grid_container {
     display: grid;
-    grid-template-columns: 0.3fr 3fr 3fr 6fr 0.5fr;
+    grid-template-columns: 0.3fr 3fr 4fr 6fr 0.5fr;
     grid-column-gap: 10px;
     margin-top: 20px;
 }
@@ -9,6 +9,7 @@
 }
 .profile_main_photo img {
     height: 420px;
+    max-width: 300px;
 }
 .action_btns {
   font-size: 12px;
@@ -94,4 +95,9 @@
 .status span {
     color: #16b4dc;
     text-decoration: underline;
+    padding: 0px 5px 6px 35px;
+    background: url("../img/edit1.png") no-repeat 0px;
+}
+.params_table_form_lfa {
+    display: inline-flex;
 }

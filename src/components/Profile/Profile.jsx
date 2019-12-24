@@ -1,19 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './Profile.module.css';
 import profileMainPhoto from './../img/photo3.jpg';
 import LoadingModal from './../Loading/Loading';
 import ProfileStatusWithHooks from './ProfileStatusHook';
+import ParamsTableReduxForm from './ParamsTableForm'
 
 const Profile = (props) => {
-   if (!props.profile) {return <LoadingModal/>}
+   
+    let [editMode, setEditMode] = useState(false);
+
+    if (!props.profile) {return <LoadingModal/>}
+
     const onMainPhotoSelecetd = (e) => {
         if (e.target.files.length) {
             props.savePhoto(e.target.files[0])
         }
     }
+    const onSubmit = async (formData) => {
+        await props.saveProfile(formData)
+        setEditMode(false);
+    }
     return (
     <div className='row'>
-<div className={style.grid_container}>
+    <div className={style.grid_container}>
     <div className={style.profile_main_photo}>
         <img src={props.profile.photos.large || profileMainPhoto} alt="" />
         
@@ -27,46 +36,12 @@ const Profile = (props) => {
             <span className={style.id_girl}> ID: {props.profile.userId} </span>
         </div>
         <div className={style.main_params}>
-            <table className={style.params_table}>
-                <tbody>
-                    <tr>
-                        <td>Birth Date</td>
-                        <td className={style.value}>10.09.1990 </td>
-                    </tr>
-                    <tr>
-                        <td>Height</td>
-                        <td className={style.value}>160 cm</td>
-                    </tr>
-                    <tr>
-                        <td>Weight</td>
-                        <td className={style.value}>50 kg</td>
-                    </tr>
-                    <tr>
-                        <td>Eyes</td>
-                        <td className={style.value}>Green</td>
-                    </tr>
-                    <tr>
-                        <td>Hair</td>
-                        <td className={style.value}>Black</td>
-                    </tr>
-                    <tr>
-                        <td>Build</td>
-                        <td className={style.value}>Slim</td>
-                    </tr>
-                    <tr>
-                        <td>Glasses</td>
-                        <td className={style.value}>No</td>
-                    </tr>
-                    <tr>
-                        <td>Smoking</td>
-                        <td className={style.value}>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>Drinking</td>
-                        <td className={style.value}>Yes</td>
-                    </tr>
-                </tbody>
-            </table>
+
+        { editMode ? 
+        <ParamsTableReduxForm initialValues={props.profile} profile={props.profile} onSubmit={onSubmit}/> : 
+        <ParamsTable profile={props.profile} isOwner={props.isOwner} 
+        goToEditMode={()=> {setEditMode(true)}} />}
+            
         </div>
     </div>
     <div className={style.profile_add_info}>
@@ -105,14 +80,13 @@ const Profile = (props) => {
                         <td><a href="#0">will decide with my husband</a></td>
                     </tr>
                     <tr>
-                        <td>My Languages</td>
-                        <td>
-                            <ul>
-                                <li><a href="#0">Russian</a><span>(Fluent)</span></li>
-                                <li><a href="#0">Ukrainian</a><span>(Native)</span></li>
-                                <li><a href="#0">English</a><span>(Beginner)</span></li>
-                            </ul>
-                        </td>
+                    <td>My Contacts</td>
+                    <td>
+                        <ul> {Object.keys(props.profile.contacts).map(key => {
+                        return <Contact contactTitle={key} contactValue={props.profile.contacts[key]}
+                        key={key} />})}
+                        </ul>
+                    </td>
                     </tr>
                 </tbody>
             </table>
@@ -127,6 +101,54 @@ const Profile = (props) => {
     </div>
 </div>
 )
+}
+const ParamsTable = ({profile, isOwner, goToEditMode}) => {
+    return <div> {isOwner && <div><button onClick={goToEditMode}>Edit</button></div>}
+        <table className={style.params_table}>
+            <tbody>
+                <tr>
+                    <td>Birth Date</td>
+                        <td className={style.value}>10.09.1990 </td>
+                    </tr>
+                    <tr>
+                        <td>Height</td>
+                        <td className={style.value}>160 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td className={style.value}>50 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Eyes</td>
+                        <td className={style.value}>Green</td>
+                    </tr>
+                    <tr>
+                        <td>Hair</td>
+                        <td className={style.value}>Black</td>
+                    </tr>
+                    <tr>
+                        <td>Build</td>
+                        <td className={style.value}>Slim</td>
+                    </tr>
+                    <tr>
+                        <td>Looking for a JOB</td>
+                    <td className={style.value}> {profile.lookingForAJob ? "Yes" : "No"}</td>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                    <td className={style.value}> { profile.lookingForAJobDescription }</td>
+                    </tr>
+                    <tr>
+                        <td>About Me</td>
+                    <td className={style.value}> { profile.aboutMe }</td>
+                    </tr>
+                </tbody>
+            </table></div>
+}
+
+
+const Contact = ({contactTitle, contactValue}) => {
+return <div> <li>{contactTitle} <span>: {contactValue}</span> </li></div>
 }
 
 

@@ -55,46 +55,25 @@ return (
     <h2 className={style.column_name}>Welcome to Brides.dating</h2>
 
     <div className={style.girls_block}>
-      <div className="prev_anketa">
-        <div className="link_img">
-          <a href="#0" className={style.img_block}>
-            <img src={lp_gphoto} alt="" /> </a>
-          <a href="#0" className={style.online_ind}>Online</a>
-        </div>
-        <h3 className={style.user_name}>Anastasia<span className="id_online"></span></h3>
-        <span class="from-city">25 years old from Lviv</span>
-      </div>
-      <div className="prev_anketa">
-        <div className="link_img">
-          <a href="#0" className={style.img_block}>
-            <img src={lp_gphoto} alt="" /> </a>
-          <a href="#0" className={style.online_ind}>Online</a>
-        </div>
-        <h3 className={style.user_name}>Anastasia<span className="id_online"></span></h3>
-        <span class="from-city">25 years old from Lviv</span>
-      </div>
-      <div className="prev_anketa">
-        <div className="link_img">
-          <a href="#0" className={style.img_block}>
-            <img src={lp_gphoto} alt="" /> </a>
-          <a href="#0" className={style.online_ind}>Online</a>
-        </div>
-        <h3 className={style.user_name}>Anastasia<span className="id_online"></span></h3>
-        <span class="from-city">25 years old from Lviv</span>
-      </div>
-      <div className="prev_anketa">
-        <div className="link_img">
-          <a href="#0" className={style.img_block}>
-            <img src={lp_gphoto} alt="" /> </a>
-          <a href="#0" className={style.online_ind}>Online</a>
-        </div>
-        <h3 className={style.user_name}>Anastasia<span className="id_online"></span></h3>
-        <span class="from-city">25 years old from Lviv</span>
-      </div>
+      <Prev_anketa />
+      <Prev_anketa />
+      <Prev_anketa />
+      <Prev_anketa />
     </div>
   </div>
 </div>
 );
+}
+const Prev_anketa = () => {
+  return <div className="prev_anketa">
+  <div className={style.link_img}>
+    <a href="#0" className={style.img_block}>
+      <img src={lp_gphoto} alt="" /> </a>
+    <a href="#0" className={style.online_ind}>Online</a>
+  </div>
+  <h3 className={style.user_name}>Anastasia<span className="id_online"></span></h3>
+  <span class="from-city">25 years old from Lviv</span>
+</div>
 }
 
 const mapStateToProps = (state) => ({
