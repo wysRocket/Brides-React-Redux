@@ -1,39 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f4389ffc32fa27314982bd9655f6069",
+    "revision": "5a61a9c3f3a5fef64a1ad06757a56188",
     "url": "/myReactApp/index.html"
   },
   {
-    "revision": "a019fb178ab8b80a4bca",
-    "url": "/myReactApp/static/css/3.60be5d93.chunk.css"
+    "revision": "47c715b7e77c35f49f2b",
+    "url": "/myReactApp/static/css/3.6760eb44.chunk.css"
   },
   {
-    "revision": "f9d793cb07662c0f33c4",
+    "revision": "d2933e306cf955b1f22b",
     "url": "/myReactApp/static/css/4.8a8b4973.chunk.css"
   },
   {
-    "revision": "2e7417a055c35626280d",
-    "url": "/myReactApp/static/css/main.79545cd0.chunk.css"
+    "revision": "b894dba7cdb70edbbf8d",
+    "url": "/myReactApp/static/css/main.c0beba70.chunk.css"
   },
   {
-    "revision": "1dec58c9060795f9d3ce",
-    "url": "/myReactApp/static/js/2.7931c6be.chunk.js"
+    "revision": "af71081ab6efb23ff2fd",
+    "url": "/myReactApp/static/js/2.a530bdb4.chunk.js"
   },
   {
-    "revision": "a019fb178ab8b80a4bca",
-    "url": "/myReactApp/static/js/3.5206a80b.chunk.js"
+    "revision": "47c715b7e77c35f49f2b",
+    "url": "/myReactApp/static/js/3.ad011492.chunk.js"
   },
   {
-    "revision": "f9d793cb07662c0f33c4",
-    "url": "/myReactApp/static/js/4.3b28471f.chunk.js"
+    "revision": "d2933e306cf955b1f22b",
+    "url": "/myReactApp/static/js/4.555950ac.chunk.js"
   },
   {
-    "revision": "2e7417a055c35626280d",
-    "url": "/myReactApp/static/js/main.55b7acb0.chunk.js"
+    "revision": "b894dba7cdb70edbbf8d",
+    "url": "/myReactApp/static/js/main.95729cd9.chunk.js"
   },
   {
-    "revision": "c5f6cfbe0376f3b2a4de",
-    "url": "/myReactApp/static/js/runtime-main.65fc5977.js"
+    "revision": "c4918c45b49864534cbb",
+    "url": "/myReactApp/static/js/runtime-main.c2cdc9ee.js"
+  },
+  {
+    "revision": "0ee1a1f115cc39b459ec2dd5d6fd75a2",
+    "url": "/myReactApp/static/media/Rise-Of-Skywalker.0ee1a1f1.jpg"
   },
   {
     "revision": "dd23b76bda85dbaf1bded935bb426af8",
@@ -66,5 +70,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "510c4275b8322c8b7cfd60629868ecde",
     "url": "/myReactApp/static/media/photo3.510c4275.jpg"
+  },
+  {
+    "revision": "d22bb3b9ed2948a703c57488a070a821",
+    "url": "/myReactApp/static/media/sw.d22bb3b9.jpg"
   }
 ]);
