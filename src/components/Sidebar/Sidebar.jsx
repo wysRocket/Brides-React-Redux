@@ -4,7 +4,7 @@ import {NavLink, Route, Switch} from 'react-router-dom';
 import ViewProfile from './../ViewProfile/ViewProfile';
 import MyPhotos from './../MyPhotos/MyPhotos';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return (
         
         <div className = {style.main_menu}>
@@ -50,7 +50,8 @@ const Sidebar = () => {
             </div>
             <div>
                 <Switch> 
-                <Route path='/main/myphotos' render={ ()=> <MyPhotos /> } />
+                <Route path='/main/myphotos' render={ ()=> 
+                    <MyPhotos profile={props.profile} {...props} /> } />
                 <Route path='/main/' render={ ()=> <ViewProfile /> } />
                 </Switch>
             </div>
@@ -60,6 +61,4 @@ const Sidebar = () => {
     
 };
               
-
-
 export default Sidebar;

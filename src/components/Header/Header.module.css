@@ -39,8 +39,10 @@ a {
   font-size: 15px;
   display: flex;
   justify-content: space-between;
+  
 }
 .header_nav a:hover {
+  border-radius: 5px;
   background-color:#16b4dc;
   cursor: pointer;
 }

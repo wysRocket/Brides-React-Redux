@@ -38,7 +38,7 @@ const Profile = (props) => {
         <div className={style.main_params}>
 
         { editMode ? 
-        <ParamsTableReduxForm initialValues={props.profile} profile={props.profile} onSubmit={onSubmit}/> : 
+    <ParamsTableReduxForm initialValues={props.profile} profile={props.profile} onSubmit={onSubmit}/> : 
         <ParamsTable profile={props.profile} isOwner={props.isOwner} 
         goToEditMode={()=> {setEditMode(true)}} />}
             

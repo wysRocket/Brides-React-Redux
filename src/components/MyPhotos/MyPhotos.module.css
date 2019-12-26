@@ -7,3 +7,6 @@
     width: 85%;
     text-align: center;
 }
+.photo_panel img {
+    max-width: 500px;
+}

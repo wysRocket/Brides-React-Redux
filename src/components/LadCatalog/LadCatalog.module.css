@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
+    max-width: 315px;
 }
 .ind_online{
     color: rgba(66, 133, 17, 1);
@@ -19,7 +20,7 @@
     background-color: rgba(66, 133, 17, 1);
 	color: white;
 	font-size: 12px;
-	padding: 10px;
+	padding: 5px 5px 22px;
     border-radius: 6px;
     margin: 15px 18px;
 }
