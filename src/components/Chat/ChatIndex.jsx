@@ -75,7 +75,7 @@ const ChatIndex = (props) => {
 
     let newMessageBody = props.chatsPage.newMessageBody;
 
-    if (!props.isAuth) return <Redirect to={"/login"} />;
+ //   if (!props.isAuth) return <Redirect to={"/login"} />;
 
     let addNewMessage = (values) => {
         props.sendMessage(values.newMessageBody)

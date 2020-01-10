@@ -1,4 +1,4 @@
-.header {
+.app_header {
   display: grid;
   grid-template-columns: 1fr 2fr 5fr 2fr 1fr;
   grid-template-areas: ". header-logo header-nav header-langdropdown .";
@@ -8,15 +8,16 @@
   border-bottom: 4px solid #16b4dc;
   margin-top: 10px;
 }
-a {
+a, a:hover {
   text-decoration: none;
 	color: black;
 }
-.logo {
+.app_logo {
   grid-area: header-logo;
   background: url(./../img/heart.png) no-repeat ;
+  background-position: 0px 7px;
 }
-.logo a {
+.app_logo a {
   padding-left: 45px;
 	font-weight: 800;
 	font-size: 36px;
@@ -30,18 +31,18 @@ a {
 	color: #72cae6;
 	letter-spacing: 1px;
 	position: absolute;
-  padding-top: 0px;
+  padding-top: 5px;
   margin-left: -40px;
   
 }
-.header_nav {
+.app_header_nav {
   grid-area: header-nav;
   font-size: 15px;
   display: flex;
   justify-content: space-between;
   
 }
-.header_nav a:hover {
+.app_header_nav a:hover {
   border-radius: 5px;
   background-color:#16b4dc;
   cursor: pointer;

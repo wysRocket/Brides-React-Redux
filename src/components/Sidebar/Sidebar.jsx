@@ -3,6 +3,7 @@ import style from './Sidebar.module.css';
 import {NavLink, Route, Switch} from 'react-router-dom';
 import ViewProfile from './../ViewProfile/ViewProfile';
 import MyPhotos from './../MyPhotos/MyPhotos';
+import { Button, Badge } from 'react-bootstrap';
 
 const Sidebar = (props) => {
     return (
@@ -10,15 +11,15 @@ const Sidebar = (props) => {
         <div className = {style.main_menu}>
             <div className = {style.menu_drop}>
                 <ul className = {style.correspondence}> Correspondence 
-                    <li> <a href='#'> Ladies  
-                        <span className = {style.badge}>
-                        <b>5</b>/24 </span>
-                        </a>
+                    <li> <Button variant="primary">
+                    Ladies <Badge variant="light">9</Badge>
+                    <span className="sr-only">unread messages</span>
+                    </Button>
                     </li>
-                    <li> <a href='#'> Administration 
-                        <span className = {style.badge}>
-                        <b>1</b>/20 </span>
-                        </a>
+                    <li> <Button variant="primary">
+                    Administration <Badge variant="light">2</Badge>
+                    <span className="sr-only">unread messages</span>
+                    </Button>
                     </li>
                     <li>< a href='#'> Draft</a> </li>
                     <li> <a href='#'> Deleted Mail</a> </li>

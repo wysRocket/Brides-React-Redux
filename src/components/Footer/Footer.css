@@ -1,0 +1,138 @@
+
+.footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #f1f1f1;
+	padding-bottom: 30px;
+	border-top: 5px solid #16b4dc;
+	max-width: 2000px;
+	margin-top: 70px;
+}
+
+.banner-logo {
+	display: inline-block;
+	position: absolute;
+	left: -204px;
+	top: 37px;
+}
+.copyright {
+    padding-left: 25px;
+}
+
+.footer_container a.logo {
+	margin-left: 0;
+	margin-top: 40px;
+	margin-bottom: 27px;
+}
+.copyr {
+	font-size: 12px;
+	color: #787878;
+	padding-left: 5px;
+	clear: both;
+	display: block;
+}
+
+.soc-btn a.btn {
+	margin-top: 15px;
+	border: none;
+	width: 40px;
+	height: 40px;
+	color:white;
+	border-radius: 0;
+	font-size: 20px;
+	transition: all .2s ease-in-out;
+
+}
+.sc-youtube {
+	background-color: #e70031;
+}
+.sc-facebook {
+	background-color: #39599f;
+}
+.sc-twiter {
+	background-color: #45b0e3;
+}
+.sc-vimeo {
+	background-color: #7edde8;
+}
+.soc-btn a.btn:hover{
+transform: Scale(.9);
+}
+.footer-title-gr {
+	margin-top: 53px;
+	border-left: 1px solid #e6e6e6;
+	padding-left: 20px;
+}
+.footer-title-gr h3 {
+	font-size: 18px;
+	color: #000000;
+	margin-bottom: 30px;
+}
+.footer-title-gr li {
+	display: block;
+	font-size: 12px;
+	/* color: #979797; */
+	margin-bottom: 15px;
+}
+.footer-title-gr li a{
+	color:#979797;
+}
+.footer-title-gr li a:hover{
+	color:#16B4DC;
+}
+ul.footer-title-gr.agency {
+	padding-bottom: 72px;
+}
+ul.footer-title-gr.agency.service {
+	padding-bottom: 30px;
+}
+ul.footer-title-gr.agency li, ul.footer-title-gr.agency.service li {
+	padding: 14px 0 15px 46px;
+	height: 41px;
+	margin-bottom: 0;
+}
+ul.footer-title-gr.agency li{
+	background: url("../img/icon-about.png") no-repeat;
+}
+ul.footer-title-gr.agency li:first-child, ul.footer-title-gr.agency.service li:first-child{
+	padding:0;
+	background: none;
+}
+ul.footer-title-gr.agency li.agancy-mission{
+	background-position: 0px 3px;
+}
+ul.footer-title-gr.agency li.agancy-scam{
+	background-position: 0px -35px;
+}
+
+ul.footer-title-gr.agency li.agancy-news{
+	background-position: 1px -74px;
+}
+
+ul.footer-title-gr.agency li.agancy-test{
+	background-position: 0px -112px;
+}
+ul.footer-title-gr.agency li.agancy-girl{
+	background-position: 1px -149px;
+}
+ul.footer-title-gr.agency.service li{
+	background: url("../img/icon-service.png") no-repeat;
+}
+ul.footer-title-gr.agency.service li.servise-our{
+	background-position: 0px 4px;
+}
+ul.footer-title-gr.agency.service li.service-com{
+	background-position: 0px -34px;
+}
+ul.footer-title-gr.agency.service li.service-gift{
+	background-position: 0px -71px;
+}
+ul.footer-title-gr.agency.service li.service-special{
+	background-position: 0px -110px;
+}
+ul.footer-title-gr.agency.service li.service-week{
+	background-position: 0px -148px;
+}
+ul.footer-title-gr.agency.service li.service-trip{
+	background-position: 0px -186px;
+}

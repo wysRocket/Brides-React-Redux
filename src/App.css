@@ -1,9 +1,9 @@
-.container {
+.app_container {
     display: grid;
     grid-row-gap: 5px;
     grid-template-rows: auto auto;
     
 }
-.header {
+.app_header {
     grid-row: 1/2;
 }

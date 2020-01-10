@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './ViewProfile.module.css'
 import { NavLink } from 'react-router-dom';
+import { ProgressBar } from 'react-bootstrap';
 
 const ViewProfile = () => {
     return (
@@ -14,7 +15,7 @@ const ViewProfile = () => {
                 Dude, your profile is only 35% complete!
                 <div className="progress_bar">
                         
-                    <span className="sr-only">!!! 35% Complete !!!</span>
+                <ProgressBar animated now={35} />
                         
                     </div>
             <p>To attract more ladies attention to your account - it need`s to be complete. 

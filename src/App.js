@@ -11,6 +11,7 @@ import LoadingModal from './components/Loading/Loading';
 import {withSuspense} from './hoc/withSuspense';
 import PNF1 from './components/404/404-1';
 import SidebarContainer from './components/Sidebar/SidebarContainer';
+import Footer from './components/Footer/Footer';
 const LadCatalogContainer = React.lazy(() => import ('./components/LadCatalog/LadCatalogContainer'));
 const ChatIndexContainer = React.lazy(() => import ('./components/Chat/ChatIndexContainer'));
 
@@ -25,9 +26,9 @@ class App extends React.Component {
   
     return (
     
-    <div className='container'>
-      <div className = 'header'><HeaderContainer /> </div>
-        <div className = 'body'>
+    <div className='app_container'>
+      <div className = 'app_header'> <HeaderContainer /> </div>
+        <div className = 'app_body'>
           <Switch>
           <Route exact path='/' render={ () => <Redirect to={"/main"} />}/>
           <Route path='/login' render={ () => <Login />}/>
@@ -38,6 +39,7 @@ class App extends React.Component {
           <Route path='/*' render={ () => <PNF1 />}/>
           </Switch>
       </div>
+      <Footer />
     </div>
     
   );

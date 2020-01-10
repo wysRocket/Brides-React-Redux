@@ -27,7 +27,9 @@ return (
             <h3 className={style.gname}>{user.name}
                 <span className={style.ind_online}> userID:{user.id}</span>
             </h3>
-            <NavLink to={'/profile/'+user.id} className={style.view_prof_btn}>View Profile</NavLink>
+            <NavLink to={'/profile/'+user.id} 
+                className={style.view_prof_btn}>View Profile
+            </NavLink>
         </div>
         <span className={style.city_from}> {user.age} years old from {user.city}</span>
     </div>

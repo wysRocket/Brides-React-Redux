@@ -1,34 +1,27 @@
 import React from 'react';
-import './pnf1.scss';
+import './Footer.css';
 
-
-const PNF1 = () => {
+const Footer = () => {
 return (
 
-<div className="pnf_container">
-    <div className="pnf_left">
-        <div className="text-error">
-            <h1>404</h1>
-            <h2>Page not found</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.</p>
-
-            <a className="btn">Homepage</a>
-        </div>
-    </div>
-
-    <div className="search_right container">
-        <div className="menu-404 center-block clearfix">
-            <div className="row">
-                <div className="col-lg-12">
-                    <h1>Try to search somewhere here</h1>
+    <div className="footer_container">
+                <div className="copyright">
+                    <div className="no-float">
+                        <a href="#0" className="logo navbar-brand">Brides <span>dating</span></a>
+                        <span className="copyr">Copyright. Brides.Dating 2020</span>
+                    </div>
+                    <div className="soc-btn">
+                        <a className="btn-group btn sc-youtube" role="group" aria-label="...">
+                            <i className="fa fa-youtube"></i></a>
+                        <a className="btn-group btn sc-facebook" role="group" aria-label="...">
+                            <i className="fa fa-facebook"></i></a>
+                        <a className="btn-group btn sc-twiter" role="group" aria-label="...">
+                            <i className="fa fa-twitter"></i></a>
+                        <a className="btn-group btn sc-vimeo" role="group" aria-label="...">
+                            <i className="fa fa-vimeo"></i></a>
+                    </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 cleat-b">
+                <div className="about">
                     <ul className="footer-title-gr">
                         <li>
                             <h3>About</h3>
@@ -45,7 +38,7 @@ return (
                         <li><a href="#0">Age Gap: should it matter?</a></li>
                     </ul>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div className="agency">
                     <ul className="footer-title-gr agency">
                         <li>
                             <h3>Agency</h3>
@@ -57,7 +50,7 @@ return (
                         <li className="agancy-girl"><a href="#0">Для девушек</a></li>
                     </ul>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div className="services">
                     <ul className="footer-title-gr agency service">
                         <li>
                             <h3>Services</h3>
@@ -71,12 +64,7 @@ return (
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-
-</div>
-
 )
 }
 
-export default PNF1;
+export default Footer;

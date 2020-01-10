@@ -7,19 +7,19 @@ const Header = (props) => {
     return (
       <div>
         {props.isAuth ? <DashboardPanel/> : null}
-      <header className = {style.header}>
-        <div className = {style.logo}>
+      <div className = {style.app_header}>
+        <div className = {style.app_logo}>
           <NavLink to='/main'>Brides   
             <span className={style.decor}>dating</span>
           </NavLink>
         </div>
-        <nav className={style.header_nav}>
+        <div className={style.app_header_nav}>
           <NavLink to='/ladiescatalog'> Ladies Gallerie </NavLink>
           <a href='#'> New Profiles</a>
-          <a href='#'> Available for VideoChat</a>
+          <NavLink to='/chathistory'> Available for VideoChat</NavLink>
           <NavLink to='/ladiescatalog'> My Favorites</NavLink>
-        </nav>
-      </header> 
+        </div>
+      </div> 
       </div>
     );
   }

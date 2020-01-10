@@ -21,7 +21,7 @@ const Profile = (props) => {
         setEditMode(false);
     }
     return (
-    <div className='row'>
+    <div className='app_row'>
     <div className={style.grid_container}>
     <div className={style.profile_main_photo}>
         <img src={props.profile.photos.large || profileMainPhoto} alt="" />
@@ -93,7 +93,7 @@ const Profile = (props) => {
         </div>
     </div>
 </div>
-    <div className={style.btn_wrap}>
+    <div className={style.app_btn_wrap}>
         <a href="#0" className={style.btn_chatstart}>Start a Chat</a>
         <a href="#0" className={style.btn_invite}>Invite to VIdeo Chat</a>
         <a href="#0" className={style.btn_present}>Send a Present</a>
