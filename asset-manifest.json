@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/myReactApp/static/css/main.7dad40a2.chunk.css",
-    "main.js": "/myReactApp/static/js/main.fa7f8928.chunk.js",
-    "main.js.map": "/myReactApp/static/js/main.fa7f8928.chunk.js.map",
-    "runtime-main.js": "/myReactApp/static/js/runtime-main.9686e048.js",
-    "runtime-main.js.map": "/myReactApp/static/js/runtime-main.9686e048.js.map",
-    "static/js/2.e538e120.chunk.js": "/myReactApp/static/js/2.e538e120.chunk.js",
-    "static/js/2.e538e120.chunk.js.map": "/myReactApp/static/js/2.e538e120.chunk.js.map",
+    "main.css": "/myReactApp/static/css/main.721c51ce.chunk.css",
+    "main.js": "/myReactApp/static/js/main.7d0d17a4.chunk.js",
+    "main.js.map": "/myReactApp/static/js/main.7d0d17a4.chunk.js.map",
+    "runtime-main.js": "/myReactApp/static/js/runtime-main.459258f3.js",
+    "runtime-main.js.map": "/myReactApp/static/js/runtime-main.459258f3.js.map",
+    "static/js/2.633123b2.chunk.js": "/myReactApp/static/js/2.633123b2.chunk.js",
+    "static/js/2.633123b2.chunk.js.map": "/myReactApp/static/js/2.633123b2.chunk.js.map",
     "static/css/3.10aaca12.chunk.css": "/myReactApp/static/css/3.10aaca12.chunk.css",
-    "static/js/3.4b03377a.chunk.js": "/myReactApp/static/js/3.4b03377a.chunk.js",
-    "static/js/3.4b03377a.chunk.js.map": "/myReactApp/static/js/3.4b03377a.chunk.js.map",
+    "static/js/3.37d72662.chunk.js": "/myReactApp/static/js/3.37d72662.chunk.js",
+    "static/js/3.37d72662.chunk.js.map": "/myReactApp/static/js/3.37d72662.chunk.js.map",
     "static/css/4.8a8b4973.chunk.css": "/myReactApp/static/css/4.8a8b4973.chunk.css",
-    "static/js/4.c3eaf2cc.chunk.js": "/myReactApp/static/js/4.c3eaf2cc.chunk.js",
-    "static/js/4.c3eaf2cc.chunk.js.map": "/myReactApp/static/js/4.c3eaf2cc.chunk.js.map",
+    "static/js/4.5b01014a.chunk.js": "/myReactApp/static/js/4.5b01014a.chunk.js",
+    "static/js/4.5b01014a.chunk.js.map": "/myReactApp/static/js/4.5b01014a.chunk.js.map",
     "index.html": "/myReactApp/index.html",
-    "precache-manifest.7abbae987aa3a02589d82465d5fb133b.js": "/myReactApp/precache-manifest.7abbae987aa3a02589d82465d5fb133b.js",
+    "precache-manifest.6ccde39c9666d9cdf0774e9f74285ba9.js": "/myReactApp/precache-manifest.6ccde39c9666d9cdf0774e9f74285ba9.js",
     "service-worker.js": "/myReactApp/service-worker.js",
     "static/css/3.10aaca12.chunk.css.map": "/myReactApp/static/css/3.10aaca12.chunk.css.map",
     "static/css/4.8a8b4973.chunk.css.map": "/myReactApp/static/css/4.8a8b4973.chunk.css.map",
-    "static/css/main.7dad40a2.chunk.css.map": "/myReactApp/static/css/main.7dad40a2.chunk.css.map",
+    "static/css/main.721c51ce.chunk.css.map": "/myReactApp/static/css/main.721c51ce.chunk.css.map",
     "static/media/Rise-Of-Skywalker.jpg": "/myReactApp/static/media/Rise-Of-Skywalker.0ee1a1f1.jpg",
     "static/media/ChatIndex.module.css": "/myReactApp/static/media/girl-list-mini.f8c3ef2e.jpg",
     "static/media/danny.jpg": "/myReactApp/static/media/danny.358035aa.jpg",
@@ -30,9 +30,9 @@
     "static/media/sw.jpg": "/myReactApp/static/media/sw.d22bb3b9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9686e048.js",
-    "static/js/2.e538e120.chunk.js",
-    "static/css/main.7dad40a2.chunk.css",
-    "static/js/main.fa7f8928.chunk.js"
+    "static/js/runtime-main.459258f3.js",
+    "static/js/2.633123b2.chunk.js",
+    "static/css/main.721c51ce.chunk.css",
+    "static/js/main.7d0d17a4.chunk.js"
   ]
 }
