@@ -19,8 +19,8 @@
 .login_fb {
   background-color: #3c5a99;
   color: white;
-  padding: 10px 5px 5px 5px;
-  margin-bottom: 20px;
+  padding: 5px 5px 5px;
+  margin-bottom: 0px;
 }
 .fa_facebook {
   background-color: #3c5a99;
@@ -29,8 +29,7 @@
   border-right: 2px solid white;
   padding-left: 10px;
   position: relative;
-  bottom: -2px;
-	right: 2px;
+  bottom: -5px;	
 }
 .logform_text {
   margin: 25px 0px 30px 5px;
@@ -39,10 +38,11 @@
   margin-right: 15px;
   background-color: #1f68ba;
   color: white;
-  padding: 4px 16px;
+  max-height: 30px;
   transition: all .2s;
+  border-radius: 5px;
 }
-.prcd_btn:hover, .login_fb:hover {
+.login_fb:hover, .prcd_btn:hover {
   background-color: #4989d5;
 }
 .forgot_btn:hover {

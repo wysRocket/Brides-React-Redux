@@ -6,15 +6,16 @@ import { Input } from './../FormControls/FormControl';
 import { required } from '../../validators/validators';
 import { connect } from 'react-redux';
 import { login } from './../../redux/auth-reducer';
-import { Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const LoginForm = (props) => {
   
   return (
   <div className={style.login_form}>
-      <div > 
+      <div> 
         <span className={style.fa_facebook}>f </span>
-        <span className={style.login_fb}> Login using Facebook </span>
+      <Button className={style.login_fb} variant="primary" size="sm"> Login using Facebook </Button>
       </div>
       <div className={style.logform_text}>Please enter your login information below</div>
         {props.error && <div className={style.auth_error}>{props.error}</div>}
