@@ -1,0 +1,16 @@
+.pnf_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.search_right {
+  grid-column: 2/3;
+}
+.btn {
+  border: 1px solid #16b4dc;
+}
+.pnf_left {
+  margin-left: 20px;
+    p {
+      padding-left: 15px;
+}
+}
