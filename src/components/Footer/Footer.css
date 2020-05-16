@@ -92,7 +92,7 @@ ul.footer-title-gr.agency li, ul.footer-title-gr.agency.service li {
 	margin-bottom: 0;
 }
 ul.footer-title-gr.agency li{
-	background: url("../img/icon-about.png") no-repeat;
+	background: url("../../assets/icon-about.png") no-repeat;
 }
 ul.footer-title-gr.agency li:first-child, ul.footer-title-gr.agency.service li:first-child{
 	padding:0;
@@ -116,7 +116,7 @@ ul.footer-title-gr.agency li.agancy-girl{
 	background-position: 1px -149px;
 }
 ul.footer-title-gr.agency.service li{
-	background: url("../img/icon-service.png") no-repeat;
+	background: url("../../assets/icon-service.png") no-repeat;
 }
 ul.footer-title-gr.agency.service li.servise-our{
 	background-position: 0px 4px;

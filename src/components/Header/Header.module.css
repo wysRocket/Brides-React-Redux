@@ -14,7 +14,7 @@ a, a:hover {
 }
 .app_logo {
   grid-area: header-logo;
-  background: url(./../img/heart.png) no-repeat ;
+  background: url(../../assets/heart.png) no-repeat ;
   background-position: 0px 7px;
 }
 .app_logo a {

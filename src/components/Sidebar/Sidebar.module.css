@@ -34,21 +34,21 @@ li:last-child {
   font-size: 12px;
 }
 .services {
-  background: url("../img/service-ico.png") no-repeat;
+  background: url("../../assets/service-ico.png") no-repeat;
 }
 .correspondence {
-  background: url("../img/menu-account.png") no-repeat;
+  background: url("../../assets/menu-account.png") no-repeat;
   background-position: 0px 4px;
 }
 .ladies {
-  background: url("../img/menu-account.png") no-repeat;
+  background: url("../../assets/menu-account.png") no-repeat;
   background-position: 0 -588px;
 }
 .finances {
-  background: url("../img/menu-account.png") no-repeat;
+  background: url("../../assets/menu-account.png") no-repeat;
   background-position: 0px -448px;
 }
 .myprofile {
-  background: url("../img/menu-account.png") no-repeat;
+  background: url("../../assets/menu-account.png") no-repeat;
   background-position: 0px -239px;
 }

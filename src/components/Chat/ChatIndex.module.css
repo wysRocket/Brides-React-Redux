@@ -30,7 +30,7 @@ ul.girls_list {
     display: flex;
 }
 .ava {
-    background: url("../img/girl-list-mini.jpg") no-repeat;
+    background: url("../../assets/girl-list-mini.jpg") no-repeat;
     background-position: -38px -33px;
     border-radius: 50%;
     width: 75px;
@@ -57,7 +57,7 @@ span.item_girl_from {
     background-color: rgb(144, 226, 247);
 }
 .message_ava {
-    background: url("../img/chat-girl-foto.jpg");
+    background: url("../../assets/chat-girl-foto.jpg");
     background-position: -15px -10px;
     border-radius: 30%;
     width: 45px;
@@ -80,7 +80,7 @@ span.item_girl_from {
     background-color: rgb(240, 240, 240);
 }
 .my_message_ava {
-    background: url("../img/man1.jpg");
+    background: url("../../assets/man1.jpg");
     background-position: center center;
     border-radius: 30%;
     width: 45px;

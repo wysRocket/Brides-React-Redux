@@ -20,27 +20,27 @@
   margin-bottom: 20px;
 }
 .btn_inv {
-    background: transparent url("../img/button-profile.png") no-repeat;
+    background: transparent url("../../assets/button-profile.png") no-repeat;
     background-position: 30px 0px;
     padding-top: 30px;
 }
 .btn_start_chat {
-    background: transparent url("../img/button-profile.png") no-repeat;
+    background: transparent url("../../assets/button-profile.png") no-repeat;
     background-position: -80px 0px;
     padding-top: 30px;
 }
 .btn_write_letter {
-    background: transparent url("../img/button-profile.png") no-repeat;
+    background: transparent url("../../assets/button-profile.png") no-repeat;
     background-position: -182px 0px;
     padding-top: 30px;
 }
 .btn_add_to_fav {
-    background: transparent url("../img/button-profile.png") no-repeat;
+    background: transparent url("../../assets/button-profile.png") no-repeat;
     background-position: -289px 0px;
     padding-top: 30px;
 }
 .btn_like_her {
-    background: transparent url("../img/button-profile.png") no-repeat;
+    background: transparent url("../../assets/button-profile.png") no-repeat;
     background-position: -400px 0px;
     padding-top: 30px;
 }
@@ -68,21 +68,21 @@
     margin-top: 30px;
 }
 .btn_send_letter {
-    background: #F9F9F9 url('../img/letter.png') no-repeat;
+    background: #F9F9F9 url('../../assets/letter.png') no-repeat;
     padding: 5px 5px 5px 30px;
 }
 .btn_chatstart {
-    background: #16b4dc url("../img/Chat-buble.png") no-repeat 5px;
+    background: #16b4dc url("../../assets/Chat-buble.png") no-repeat 5px;
     padding: 5px 20px 5px 35px;
     color: white;
 }
 .btn_present {
-    background: #16b4dc url("../img/Chat-buble.png") no-repeat -364px 2px;
+    background: #16b4dc url("../../assets/Chat-buble.png") no-repeat -364px 2px;
     padding: 5px 20px 5px 30px;
     color: white;
 }
 .btn_invite {
-    background: #16b4dc url("../img/web-camera.png") no-repeat 5px;
+    background: #16b4dc url("../../assets/web-camera.png") no-repeat 5px;
     padding: 5px 20px 5px 30px;
     color: white;
 }
@@ -96,7 +96,7 @@
     color: #16b4dc;
     text-decoration: underline;
     padding: 0px 5px 6px 35px;
-    background: url("../img/edit1.png") no-repeat 0px;
+    background: url("../../assets/edit1.png") no-repeat 0px;
 }
 .params_table_form_lfa {
     display: inline-flex;
