@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import style from "./Profile.module.css";
 import profileMainPhoto from "../../assets/photo3.jpg";
-import LoadingModal from "./../Loading/Loading";
-import ProfileStatusWithHooks from "./ProfileStatusHook";
-import ParamsTableReduxForm from "./ParamsTableForm";
+import {
+  ProfileStatusWithHooks,
+  ParamsTableReduxForm,
+  LoadingModal,
+  StartChatButton,
+  StartChatIcon,
+  InviteToVideoButton,
+  InviteToVideoIcon,
+  WriteLetterIcon
+} from "..";
 
 const Profile = (props) => {
   let [editMode, setEditMode] = useState(false);
@@ -60,15 +67,9 @@ const Profile = (props) => {
         </div>
         <div className={style.profile_add_info}>
           <div className={style.action_btns}>
-            <a href="#0" className={style.btn_inv}>
-              Invite to Video Chat
-            </a>
-            <a href="#0" className={style.btn_start_chat}>
-              Start a Chat
-            </a>
-            <a href="#0" className={style.btn_write_letter}>
-              Write a Letter
-            </a>
+            <InviteToVideoIcon />
+            <StartChatIcon />
+            <WriteLetterIcon />
             <a href="#0" className={style.btn_add_to_fav}>
               Add to Favorites
             </a>
@@ -119,7 +120,6 @@ const Profile = (props) => {
                   <td>My Contacts</td>
                   <td>
                     <ul>
-                      {" "}
                       {Object.keys(props.profile.contacts).map((key) => {
                         return (
                           <Contact
@@ -138,12 +138,8 @@ const Profile = (props) => {
         </div>
       </div>
       <div className={style.app_btn_wrap}>
-        <a href="#0" className={style.btn_chatstart}>
-          Start a Chat
-        </a>
-        <a href="#0" className={style.btn_invite}>
-          Invite to VIdeo Chat
-        </a>
+        <StartChatButton />
+        <InviteToVideoButton />
         <a href="#0" className={style.btn_present}>
           Send a Present
         </a>

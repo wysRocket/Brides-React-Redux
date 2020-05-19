@@ -1,0 +1,12 @@
+.app_header_nav {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+.app_header_nav a:hover {
+  border-radius: 5px;
+  background-color: #16b4dc;
+  cursor: pointer;
+}

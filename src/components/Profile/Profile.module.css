@@ -1,15 +1,15 @@
 .grid_container {
-    display: grid;
-    grid-template-columns: 0.3fr 3fr 4fr 6fr 0.5fr;
-    grid-column-gap: 10px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 4fr 6fr 0.5fr;
+  grid-column-gap: 10px;
+  margin-top: 20px;
 }
 .profile_main_photo {
-    grid-column: 2/3;
+  grid-column: 2/3;
 }
 .profile_main_photo img {
-    height: 420px;
-    max-width: 300px;
+  height: 420px;
+  max-width: 300px;
 }
 .action_btns {
   font-size: 12px;
@@ -19,85 +19,58 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.btn_inv {
-    background: transparent url("../../assets/button-profile.png") no-repeat;
-    background-position: 30px 0px;
-    padding-top: 30px;
-}
-.btn_start_chat {
-    background: transparent url("../../assets/button-profile.png") no-repeat;
-    background-position: -80px 0px;
-    padding-top: 30px;
-}
-.btn_write_letter {
-    background: transparent url("../../assets/button-profile.png") no-repeat;
-    background-position: -182px 0px;
-    padding-top: 30px;
-}
+
 .btn_add_to_fav {
-    background: transparent url("../../assets/button-profile.png") no-repeat;
-    background-position: -289px 0px;
-    padding-top: 30px;
+  background: transparent url("../../assets/button-profile.png") no-repeat;
+  background-position: -289px 0px;
+  padding-top: 30px;
 }
 .btn_like_her {
-    background: transparent url("../../assets/button-profile.png") no-repeat;
-    background-position: -400px 0px;
-    padding-top: 30px;
+  background: transparent url("../../assets/button-profile.png") no-repeat;
+  background-position: -400px 0px;
+  padding-top: 30px;
 }
-.btn_inv:hover, .btn_start_chat:hover, .btn_write_letter:hover, .btn_add_to_fav:hover, .btn_like_her:hover {
-    transform: Scale(0.8, 0.8);
-    transition: all 0.3s ease-in-out;
+
+.btn_add_to_fav:hover,
+.btn_like_her:hover {
+  transform: Scale(0.8, 0.8);
+  transition: all 0.3s ease-in-out;
 }
 .value {
-    color: black;
+  color: black;
 }
-.params_table{
-    margin-top: 20px;
-    color: #bebebe;
-    border-spacing: 10px;
+.params_table {
+  margin-top: 20px;
+  color: #bebebe;
+  border-spacing: 10px;
 }
 .params_table a {
-    color: #16b4dc;
+  color: #16b4dc;
 }
 .id_girl {
-    font-size: 12px;
+  font-size: 12px;
 }
 .app_btn_wrap {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 .btn_send_letter {
-    background: #F9F9F9 url('../../assets/letter.png') no-repeat;
-    padding: 5px 5px 5px 30px;
+  background: #f9f9f9 url("../../assets/letter.png") no-repeat;
+  padding: 5px 5px 5px 30px;
 }
-.btn_chatstart {
-    background: #16b4dc url("../../assets/Chat-buble.png") no-repeat 5px;
-    padding: 5px 20px 5px 35px;
-    color: white;
-}
+
 .btn_present {
-    background: #16b4dc url("../../assets/Chat-buble.png") no-repeat -364px 2px;
-    padding: 5px 20px 5px 30px;
-    color: white;
+  background: #16b4dc url("../../assets/Chat-buble.png") no-repeat -364px 2px;
+  padding: 5px 20px 5px 30px;
+  color: white;
 }
-.btn_invite {
-    background: #16b4dc url("../../assets/web-camera.png") no-repeat 5px;
-    padding: 5px 20px 5px 30px;
-    color: white;
-}
-.btn_chatstart:hover, .btn_present:hover, .btn_invite:hover {
-    background-color: #468C18;
+
+.btn_chatstart:hover,
+.btn_present:hover,
+.btn_invite:hover {
+  background-color: #468c18;
 }
 .btn_send_letter:hover {
-    border: 1px solid #bebebe;
-}
-.status span {
-    color: #16b4dc;
-    text-decoration: underline;
-    padding: 0px 5px 6px 35px;
-    background: url("../../assets/edit1.png") no-repeat 0px;
-}
-.params_table_form_lfa {
-    display: inline-flex;
+  border: 1px solid #bebebe;
 }

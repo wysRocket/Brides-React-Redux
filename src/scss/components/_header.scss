@@ -1,0 +1,12 @@
+.app_header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  border-bottom: 4px solid #16b4dc;
+  padding-left: 40px;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: black;
+}

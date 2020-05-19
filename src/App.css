@@ -1,9 +1,5 @@
 .app_container {
-    display: grid;
-    grid-row-gap: 5px;
-    grid-template-rows: auto auto;
-    
-}
-.app_header {
-    grid-row: 1/2;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-template-rows: auto auto;
 }

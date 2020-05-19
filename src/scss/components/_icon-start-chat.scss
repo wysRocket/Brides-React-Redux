@@ -1,0 +1,9 @@
+.icon_start_chat {
+  background: transparent url("../../assets/button-profile.png") no-repeat;
+  background-position: -80px 0px;
+  padding-top: 30px;
+}
+.icon_start_chat:hover {
+  transform: Scale(0.8, 0.8);
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,9 @@
+.icon_invite_video {
+  background: transparent url("../../assets/button-profile.png") no-repeat;
+  background-position: 30px 0px;
+  padding-top: 30px;
+}
+.icon_invite_video:hover {
+  transform: Scale(0.8, 0.8);
+  transition: all 0.3s ease-in-out;
+}

@@ -15,8 +15,7 @@ const LoginForm = (props) => {
       <div>
         <span className={style.fa_facebook}>f </span>
         <Button className={style.login_fb} variant="primary" size="sm">
-          {" "}
-          Login using Facebook{" "}
+          Login using Facebook
         </Button>
       </div>
       <div className={style.logform_text}>
@@ -42,7 +41,7 @@ const LoginForm = (props) => {
           />
         </div>
         <div className={style.checkbox}>
-          <Field name={"rememberMe"} component={Input} type={"checkbox"} />{" "}
+          <Field name={"rememberMe"} component={Input} type={"checkbox"} />
           remember Me
         </div>
         <div className={style.btns}>
@@ -89,7 +88,7 @@ const Prev_anketa = () => {
     <div className="prev_anketa">
       <div className={style.link_img}>
         <a href="#0" className={style.img_block}>
-          <img src={lp_gphoto} alt="" />{" "}
+          <img src={lp_gphoto} alt="" />
         </a>
         <a href="#0" className={style.online_ind}>
           Online

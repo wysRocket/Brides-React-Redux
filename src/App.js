@@ -31,10 +31,8 @@ class App extends React.Component {
 
     return (
       <div className="app_container">
-        <div className="app_header">
-          <HeaderContainer />
-        </div>
-        <div className="app_body">
+        <HeaderContainer />
+        <div>
           <Switch>
             <Route exact path="/" render={() => <Redirect to={"/main"} />} />
             <Route path="/login" render={() => <Login />} />

@@ -1,7 +1,21 @@
 /* utils */
-@import './utils';
+@import "./utils";
 
 /* components */
+@import "./components/logo";
+@import "./components/loading";
+@import "./components/paginator";
+@import "./components/footer";
+@import "./components/dashboard-panel";
+@import "./components/header";
+@import "./components/navbar-main";
+@import "./components/params-table";
+@import "./components/profile-status";
+@import "./components/btn-start-chat";
+@import "./components/btn-invite-video";
+@import "./components/icon-invite-video";
+@import "./components/icon-start-chat";
+@import "./components/icon-write-letter";
 
 /* pages */
-@import './pages/pnf1';
+@import "./pages/pnf1";

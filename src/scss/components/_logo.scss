@@ -1,0 +1,20 @@
+.app_logo {
+  background: url(../../assets/heart.png) no-repeat;
+  background-position: 0px 7px;
+}
+.app_logo a {
+  padding-left: 45px;
+  font-weight: 800;
+  font-size: 36px;
+  font-family: "OpenSans", sans-serif;
+}
+.decor {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #72cae6;
+  letter-spacing: 1px;
+  position: absolute;
+  padding-top: 5px;
+  margin-left: -40px;
+}

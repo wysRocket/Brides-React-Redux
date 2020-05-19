@@ -1,0 +1,9 @@
+.icon_write_letter {
+  background: transparent url("../../assets/button-profile.png") no-repeat;
+  background-position: -182px 0px;
+  padding-top: 30px;
+}
+.icon_write_letter:hover {
+  transform: Scale(0.8, 0.8);
+  transition: all 0.3s ease-in-out;
+}
