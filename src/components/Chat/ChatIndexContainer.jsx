@@ -9,15 +9,8 @@ let mapStateToProps = (state) => {
     chatsPage: state.chatsPage,
   };
 };
-let mapDispatchToProps = (dispatch) => {
-  return {
-    sendMessage: (newMessageBody) => {
-      dispatch(sendMessageCreator(newMessageBody));
-    },
-  };
-};
 
 export default compose(
-  connect(mapStateToProps, mapDispatchToProps)
+  connect(mapStateToProps, { sendMessageCreator })
   //   withAuthRedirect,
 )(ChatIndex);

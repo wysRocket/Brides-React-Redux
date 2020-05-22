@@ -4,6 +4,7 @@ import { NavLink, Redirect } from "react-router-dom";
 import { Field, reduxForm } from "redux-form";
 import { required, maxLengthCreator } from "../../validators/validators";
 import { Textarea } from "./../FormControls/FormControl";
+import { Message, DialogItem } from "../";
 
 const ChatItem = (props) => {
   return (
@@ -23,7 +24,7 @@ const ChatItem = (props) => {
   );
 };
 
-const Message = (props) => {
+const OldMessage = (props) => {
   return (
     <div className="chat_item">
       <h1 className={style.chat_item_title}>
@@ -60,23 +61,23 @@ const MyMessage = (props) => {
 };
 
 const ChatIndex = (props) => {
-  let chatsElements = props.chatsPage.chatsData.map((chat) => (
+  let chatsElements = props.chatsPage.dialogs.items.map((chat) => (
     <ChatItem
-      key={chat.id}
-      name={chat.name}
-      id={chat.id}
-      age={chat.age}
-      city={chat.city}
+      key={chat._id}
+      text={chat.text}
+      id={chat._id}
+      created_at={chat.created_at}
+      partner={chat.user}
     />
   ));
-  let messageElements = props.chatsPage.messagesData.map((msg) => (
-    <Message key={msg.id} message={msg.message} id={msg.id} />
+  let messageElements = props.chatsPage.messages.items.map((msg) => (
+    <OldMessage key={msg._id} text={msg.text} id={msg._id} date={msg.created_at} />
   ));
-  let myMessageElements = props.chatsPage.myMessagesData.map((mymssg) => (
+  /*  let myMessageElements = props.chatsPage.myMessagesData.map((mymssg) => (
     <MyMessage key={mymssg.id} myMessage={mymssg.myMessage} id={mymssg.id} />
   ));
 
-  //   if (!props.isAuth) return <Redirect to={"/login"} />;
+     if (!props.isAuth) return <Redirect to={"/login"} />;*/
 
   let addNewMessage = (values) => {
     props.sendMessage(values.newMessageBody);
@@ -89,7 +90,7 @@ const ChatIndex = (props) => {
       </div>
       <div className={style.dialog}>
         <div className="opp_mssgs">{messageElements}</div>
-        <div className="my_mssgs">{myMessageElements}</div>
+        {/*        <div className="my_mssgs">{myMessageElements}</div>*/}
         <div className={style.type_mssge}>
           <h1 className={style.chat_item_title}>
             Type a message

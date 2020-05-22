@@ -19,6 +19,7 @@ const LadCatalogContainer = React.lazy(() =>
 const ChatIndexContainer = React.lazy(() =>
   import("./components/Chat/ChatIndexContainer")
 );
+const TextChat = React.lazy(() => import("./pages/TextChat/TextChat"));
 
 class App extends React.Component {
   componentDidMount() {

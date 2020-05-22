@@ -10,8 +10,20 @@ import StartChatIcon from "./Icons/StartChat";
 import InviteToVideoButton from "./Buttons/InviteToVideo";
 import InviteToVideoIcon from "./Icons/InviteToVideo";
 import WriteLetterIcon from "./Icons/WriteLetter";
+import Message from "./Message/Message";
+import Messages from "./Messages/Messages";
+import Avatar from "./Avatar/Avatar";
+import IconReaded from "./Icons/Readed";
+import Time from "./Time/Time";
+import DialogItem from "./DialogItem/DialogItem";
+import Dialogs from "./Dialogs/Dialogs";
+import ChatInput from "./ChatInput/ChatInput";
+import UploadFiles from "./UploadFiles/UploadFiles";
+import Status from "./Status/Status";
+import ChatSidebar from "./ChatSidebar/ChatSidebar";
 
 export {
+  Avatar,
   Logo,
   Paginator,
   DashboardPanel,
@@ -23,5 +35,15 @@ export {
   StartChatIcon,
   InviteToVideoButton,
   InviteToVideoIcon,
-  WriteLetterIcon
+  WriteLetterIcon,
+  Message,
+  Messages,
+  IconReaded,
+  Time,
+  DialogItem,
+  Dialogs,
+  ChatInput,
+  UploadFiles,
+  Status,
+  ChatSidebar,
 };
