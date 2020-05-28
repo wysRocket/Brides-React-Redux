@@ -6,24 +6,6 @@ import { required, maxLengthCreator } from "../../validators/validators";
 import { Textarea } from "./../FormControls/FormControl";
 import { Message, DialogItem } from "../";
 
-const ChatItem = (props) => {
-  return (
-    <NavLink to={"/chathistory/" + props.id}>
-      <li className={style.girl_item}>
-        <div className={style.img_box}>
-          <div className={style.ava}></div>
-        </div>
-        <div className={style.text_box}>
-          <h3 className={style.item_girl_name}> {props.name} </h3>
-          <span className={style.item_girl_from}>
-            {props.age} years, from {props.city}
-          </span>
-        </div>
-      </li>
-    </NavLink>
-  );
-};
-
 const OldMessage = (props) => {
   return (
     <div className="chat_item">
@@ -62,7 +44,7 @@ const MyMessage = (props) => {
 
 const ChatIndex = (props) => {
   let chatsElements = props.chatsPage.dialogs.items.map((chat) => (
-    <ChatItem
+    <DialogItem
       key={chat._id}
       text={chat.text}
       id={chat._id}
@@ -71,7 +53,12 @@ const ChatIndex = (props) => {
     />
   ));
   let messageElements = props.chatsPage.messages.items.map((msg) => (
-    <OldMessage key={msg._id} text={msg.text} id={msg._id} date={msg.created_at} />
+    <OldMessage
+      key={msg._id}
+      text={msg.text}
+      id={msg._id}
+      date={msg.created_at}
+    />
   ));
   /*  let myMessageElements = props.chatsPage.myMessagesData.map((mymssg) => (
     <MyMessage key={mymssg.id} myMessage={mymssg.myMessage} id={mymssg.id} />

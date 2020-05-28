@@ -21,6 +21,12 @@ import ChatInput from "./ChatInput/ChatInput";
 import UploadFiles from "./UploadFiles/UploadFiles";
 import Status from "./Status/Status";
 import ChatSidebar from "./ChatSidebar/ChatSidebar";
+import ViewProfileButton from "./Buttons/ViewProfile";
+import FollowingStarButton from "./Buttons/FollowingStar";
+import User from "./User/User";
+import HeaderContainer from "./Header/HeaderContainer";
+import SidebarContainer from "./Sidebar/SidebarContainer";
+import Footer from "./Footer/Footer";
 
 export {
   Avatar,
@@ -46,4 +52,10 @@ export {
   UploadFiles,
   Status,
   ChatSidebar,
+  ViewProfileButton,
+  FollowingStarButton,
+  User,
+  HeaderContainer,
+  SidebarContainer,
+  Footer,
 };

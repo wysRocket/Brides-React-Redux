@@ -49,10 +49,10 @@ const DialogItem = ({
       <div className="dialogs__item-info">
         <div className="dialogs__item-info-top">
           <b>{partner.fullname}</b>
-{/*          <span>{getMessageTime(lastMessage.createdAt)}</span> */}
+          <span>{/*getMessageTime(lastMessage.createdAt)*/}</span>
         </div>
         <div className="dialogs__item-info-bottom">
-{/*          <p>{renderLastMessage(lastMessage, userId)}</p> */}
+          <p>{/*renderLastMessage(lastMessage, userId)*/}</p>
           {isMe && <IconReaded isMe={isMe} isReaded={lastMessage.readed} />}
           {lastMessage.undread > 0 && (
             <div className="dialogs__item-info-bottom-count">
@@ -64,5 +64,14 @@ const DialogItem = ({
     </div>
   </Link>
 );
+
+DialogItem.defaultProps = {
+  lastMessage: { created_at: "Mon Jul 17 1978 15:23:39" },
+  partner: {
+    _id: "16e62d13b2678d793d340b9fb0c79297d",
+    isOnline: false,
+    fullname: "Cesar",
+  },
+};
 
 export default DialogItem;

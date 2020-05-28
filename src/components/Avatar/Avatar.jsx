@@ -32,4 +32,8 @@ Avatar.propTypes = {
   className: PropTypes.string,
 };
 
+Avatar.defaultProps = {
+  user: { fullname: "Daryna", _id: "16e68d13b2678d793d340b9fb0c79297d" },
+};
+
 export default Avatar;
