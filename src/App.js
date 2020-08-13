@@ -40,10 +40,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" render={() => <Redirect to={"/main"} />} />
             <Route path="/login" render={() => <Login />} />
-            <Route
-              path="/chathistory"
-              render={withSuspense(ChatIndexContainer)}
-            />
+            <Route path="/chathistory" render={withSuspense(TextChat)} />
             <Route
               path="/ladiescatalog"
               render={withSuspense(CatalogContainer)}
@@ -62,11 +59,12 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  initialized: state.app.initialized,
-});
-
 export default compose(
   withRouter,
-  connect(mapStateToProps, { initializeApp })
+  connect(
+    ({ app }) => ({
+      initialized: app.initialized,
+    }),
+    { initializeApp }
+  )
 )(App);

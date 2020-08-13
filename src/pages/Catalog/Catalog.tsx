@@ -1,7 +1,18 @@
-import React from "react";
-import { Paginator, User } from "../../components";
+import React from "react"
+import { Paginator, User } from "../../components"
+import { UserType } from "../../types/types"
 
-const LadCatalog = ({
+type PropsType = {
+  totalUsersCount: number
+  pageSize: number
+  currentPage: number
+  onPageChanged: (pageNumber: number) => void
+  users: Array<UserType>
+  followingInProgress: Array<number>
+  unfollow: (userId: number) => void
+  follow: (userId: number) => void
+}
+const LadCatalog: React.FC<PropsType> = ({
   currentPage,
   totalUsersCount,
   pageSize,
@@ -11,7 +22,7 @@ const LadCatalog = ({
 }) => {
   return (
     <div>
-      <h3 className="res_search_titile">
+      <h3 className='res_search_titile'>
         Results:
         <span> {totalUsersCount} </span>
         ladies
@@ -24,7 +35,7 @@ const LadCatalog = ({
         totalItemsCount={totalUsersCount}
       />
 
-      <div className="catalog">
+      <div className='catalog'>
         {users.map((u) => (
           <User
             key={u.id}
@@ -36,7 +47,7 @@ const LadCatalog = ({
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LadCatalog;
+export default LadCatalog

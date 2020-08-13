@@ -87,17 +87,13 @@ const Dialogs = ({
   );
 };
 
-let mapStateToProps = (state) => {
-  return {
-    user: state.chatsPage.user,
-    dialogs: state.chatsPage.dialogs.items,
-    items: state.chatsPage.messages.items,
-    isLoading: state.chatsPage.messages.isLoading,
-    attachments: state.chatsPage.attachments.items,
-    currentDialogId: state.chatsPage.dialogs.find(state.chatsPage.dialogs.items, {
-      _id: state.chatsPage.dialogs.currentDialogId,
-    }),
-  };
-};
-
-export default connect(mapStateToProps, { messagesActions })(Dialogs);
+export default connect(
+  ({ dialogs, messages, user, attachments }) => ({
+    currentDialog: find(dialogs.items, { _id: dialogs.currentDialogId }),
+    items: messages.items,
+    isLoading: messages.isLoading,
+    attachments: attachments.items,
+    user: user.data,
+  }),
+  messagesActions
+)(Dialogs);
