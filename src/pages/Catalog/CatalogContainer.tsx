@@ -1,19 +1,20 @@
-import React from "react"
-import { connect } from "react-redux"
-import Catalog from "./Catalog"
-import { follow, unfollow, requestUsers } from "../../redux/ladcatalog-reducer"
-import LoadingModal from "../../components/Loading/Loading"
+import React from 'react'
+import { connect } from 'react-redux'
+import Catalog from './Catalog'
+import { follow, unfollow, requestUsers } from '../../redux/users-reducer'
+import LoadingModal from '../../components/Loading/Loading'
 import {
+  getUsers,
   getUsersSelector,
   getCurrentPage,
   getPageSize,
   getIsFetching,
   getTotalUsersCount,
   getFollowingInProgress,
-} from "../../redux/users-selectors"
-import { compose } from "redux"
-import { UserType } from "../../types/types"
-import { AppStateType } from "../../redux/redux-store"
+} from '../../redux/users-selectors'
+import { compose } from 'redux'
+import { UserType } from '../../types/types'
+import { AppStateType } from '../../redux/redux-store'
 
 type MapStateToPropsType = {
   currentPage: number
@@ -35,24 +36,12 @@ class LadCatalogContainer extends React.Component<PropsType> {
     const { currentPage, pageSize } = this.props
     this.props.requestUsers(currentPage, pageSize)
   }
-  onPageChanged = (pageNumber: number) => {
-    const { pageSize } = this.props
-    this.props.requestUsers(pageNumber, pageSize)
-  }
+
   render() {
     return (
       <>
         {this.props.isFetching ? <LoadingModal /> : null}
-        <Catalog
-          onPageChanged={this.onPageChanged}
-          users={this.props.users}
-          pageSize={this.props.pageSize}
-          currentPage={this.props.currentPage}
-          totalUsersCount={this.props.totalUsersCount}
-          follow={this.props.follow}
-          unfollow={this.props.unfollow}
-          followingInProgress={this.props.followingInProgress}
-        />
+        <Catalog />
       </>
     )
   }

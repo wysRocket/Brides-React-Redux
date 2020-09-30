@@ -1,5 +1,5 @@
-import React from "react"
-import cn from "classnames"
+import React from 'react'
+import cn from 'classnames'
 
 type PropsType = {
   totalItemsCount: number
@@ -44,7 +44,7 @@ const Paginator: React.FC<PropsType> = ({
         .map((p) => {
           return (
             <div
-              className={cn({ selected_page: currentPage === p }, "pag_page")}
+              className={cn({ selected_page: currentPage === p }, 'pag_page')}
               key={p}
               onClick={(e) => {
                 onPageChanged(p)

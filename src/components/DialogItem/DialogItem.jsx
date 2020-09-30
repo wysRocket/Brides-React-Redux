@@ -1,29 +1,29 @@
-import React from "react";
-import classNames from "classnames";
-import format from "date-fns/format";
-import isToday from "date-fns/isToday";
-import { Link } from "react-router-dom";
+import React from 'react'
+import classNames from 'classnames'
+import format from 'date-fns/format'
+import isToday from 'date-fns/isToday'
+import { Link } from 'react-router-dom'
 
-import { IconReaded, Avatar } from "../";
+import { IconReaded, Avatar } from '../'
 
 const getMessageTime = (createdAt) => {
   if (isToday(createdAt)) {
-    return format(createdAt, "HH:mm");
+    return format(createdAt, 'HH:mm')
   } else {
-    return format(createdAt, "DD.MM.YYYY");
+    return format(createdAt, 'DD.MM.YYYY')
   }
-};
+}
 
 const renderLastMessage = (message, userId) => {
-  let text = "";
+  let text = ''
   if (!message.text && message.attachments.length) {
-    text = "прикрепленный файл";
+    text = 'прикрепленный файл'
   } else {
-    text = message.text;
+    text = message.text
   }
 
-  return `${message.user._id === userId ? "Вы: " : ""}${text}`;
-};
+  return `${message.user._id === userId ? 'Вы: ' : ''}${text}`
+}
 
 const DialogItem = ({
   _id,
@@ -38,40 +38,40 @@ const DialogItem = ({
 }) => (
   <Link to={`/dialog/${_id}`}>
     <div
-      className={classNames("dialogs__item", {
-        "dialogs__item--online": partner.isOnline,
-        "dialogs__item--selected": currentDialogId === _id,
+      className={classNames('dialogs__item', {
+        'dialogs__item--online': partner.isOnline,
+        'dialogs__item--selected': currentDialogId === _id,
       })}
     >
-      <div className="dialogs__item-avatar">
+      <div className='dialogs__item-avatar'>
         <Avatar user={partner} />
       </div>
-      <div className="dialogs__item-info">
-        <div className="dialogs__item-info-top">
+      <div className='dialogs__item-info'>
+        <div className='dialogs__item-info-top'>
           <b>{partner.fullname}</b>
           <span>{/*getMessageTime(lastMessage.createdAt)*/}</span>
         </div>
-        <div className="dialogs__item-info-bottom">
+        <div className='dialogs__item-info-bottom'>
           <p>{/*renderLastMessage(lastMessage, userId)*/}</p>
           {isMe && <IconReaded isMe={isMe} isReaded={lastMessage.readed} />}
           {lastMessage.undread > 0 && (
-            <div className="dialogs__item-info-bottom-count">
-              {lastMessage.undread > 9 ? "+9" : lastMessage.undread}
+            <div className='dialogs__item-info-bottom-count'>
+              {lastMessage.undread > 9 ? '+9' : lastMessage.undread}
             </div>
           )}
         </div>
       </div>
     </div>
   </Link>
-);
+)
 
 DialogItem.defaultProps = {
-  lastMessage: { created_at: "Mon Jul 17 1978 15:23:39" },
+  lastMessage: { created_at: 'Mon Jul 17 1978 15:23:39' },
   partner: {
-    _id: "16e62d13b2678d793d340b9fb0c79297d",
+    _id: '16e62d13b2678d793d340b9fb0c79297d',
     isOnline: false,
-    fullname: "Cesar",
+    fullname: 'Cesar',
   },
-};
+}
 
-export default DialogItem;
+export default DialogItem
