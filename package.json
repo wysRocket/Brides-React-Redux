@@ -15,7 +15,7 @@
     "@types/redux-form": "^8.2.7",
     "antd": "^4.2.4",
     "axios": "^0.21.2",
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^5.0.0",
     "classnames": "^2.2.6",
     "date-fns": "^2.14.0",
     "emoji-mart": "^3.0.0",
